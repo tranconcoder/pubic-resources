@@ -11,6 +11,7 @@
 #   ./convert.sh outputs/cv-fullstack.tex docx      # PDF -> Word via pandoc
 #
 # Requires: pdflatex (texlive), pdftoppm (poppler-utils), pandoc.
+# On NixOS: run `nix-shell` in this directory first (see shell.nix).
 
 set -euo pipefail
 

@@ -1,13 +1,13 @@
 \documentclass[10pt,a4paper]{article}
 
 % Packages (kept to what's available in this texlive-medium: no enumitem/titlesec/fontawesome5)
-\usepackage[margin=0.55in,top=0.4in,bottom=0.35in]{geometry}
+\usepackage[margin=0.55in,top=0.35in,bottom=0.3in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{charter}      % Bitstream Charter -- compact, highly readable CV font
 \usepackage{microtype}    % better spacing/justification
 \usepackage{xcolor}
-\usepackage[skip=3pt]{parskip}
+\usepackage[skip=2.5pt]{parskip}
 \usepackage{ragged2e}     % \RaggedRight with hyphenation for bullets
 \usepackage{hyperref}
 
@@ -22,7 +22,9 @@
     urlcolor=accentcolor,
     pdfborder={0 0 0},
     pdftitle={Tran Van Con -- Backend Developer},
-    pdfauthor={Tran Van Con}
+    pdfauthor={Tran Van Con},
+    pdfsubject={Backend Developer CV},
+    pdfkeywords={Backend Developer, Node.js, TypeScript, NestJS, Express.js, AWS, Redis, PostgreSQL, MySQL, SQS, BullMQ, Docker, CI/CD, DDD, Hexagonal Architecture}
 }
 
 % Remove page numbers
@@ -30,7 +32,7 @@
 
 % Custom section formatting (titlesec not available -- redefine \section manually)
 \renewcommand{\section}[1]{%
-  \par\vspace{5pt}%
+  \par\vspace{3.5pt}%
   \noindent{\large\bfseries\color{accentcolor}#1}\par
   \nointerlineskip\vspace{-1pt}%
   \noindent{\color{accentcolor}\rule{\linewidth}{0.8pt}}\par
@@ -43,7 +45,7 @@
   {\begin{list}{{\color{accentcolor}\small\raisebox{0.1em}{$\bullet$}}}%
      {\setlength{\leftmargin}{1.1em}%
       \setlength{\itemindent}{0pt}%
-      \setlength{\itemsep}{1pt}%
+      \setlength{\itemsep}{0.5pt}%
       \setlength{\parsep}{0pt}%
       \setlength{\topsep}{1pt}%
       \setlength{\listparindent}{0pt}}%
@@ -94,51 +96,52 @@
 
 % Summary
 \section{Summary}
-Backend Developer (Node.js/TypeScript) with production experience on serverless, high-concurrency systems serving 10M+ users on AWS. Strong in NestJS/Express, Redis, queues (SQS, BullMQ), DDD and Hexagonal Architecture, owning delivery from system design to CI/CD and testing. Former Tech Lead -- Top 30 UniVentures 2025.
+Backend Developer (Node.js/TypeScript) building serverless, high-concurrency systems on AWS in production for 10M+ end users. Cut a static-site build pipeline's time by 80\% and drove unit-test coverage to 90\% on NestJS/Express services backed by Redis, SQS/BullMQ, DDD, and Hexagonal Architecture. Tech Lead of a Top-30 team (out of 1,500+) at UniVentures 2025.
 
 % Technical Skills
 \section{Technical Skills}
 
-\textbf{Backend:} NestJS, Express.js, Node.js, TypeScript, WebSocket, Spring Boot, PHP \\
+\textbf{Languages \& Backend:} TypeScript, Node.js (NestJS, Express.js), WebSocket, Java (Spring Boot), PHP \\
 \textbf{Databases \& Caching:} PostgreSQL, MySQL, MongoDB, Redis, Drizzle ORM \\
-\textbf{Messaging \& Background Jobs:} AWS SQS, BullMQ, Webhooks, MQTT \\
-\textbf{Cloud \& DevOps:} AWS (Lambda, S3, SQS, CloudFront, EC2), Docker, GitLab CI/CD, GitHub Actions \\
-\textbf{Architecture \& Patterns:} Hexagonal, DDD; Singleton, Strategy, Factory, Observer \\
+\textbf{Messaging \& Background Jobs:} AWS SQS, BullMQ, MQTT, Webhooks \\
+\textbf{Cloud \& DevOps:} AWS (Lambda, S3, SQS, CloudFront, EC2), Docker, GitLab CI/CD, GitHub Actions, MinIO, LocalStack \\
+\textbf{Architecture \& Testing:} Hexagonal Architecture, Domain-Driven Design (DDD), RESTful API design, GoF design patterns, unit testing \\
 \textbf{AI Integration:} LLM tool-calling (MCP), Hybrid RAG (BM25 + pgvector) \\
-\textbf{Tools:} Alibaba KMS, MinIO, LocalStack \\
 \textbf{Frontend:} ReactJS, Redux, NextJS, Sass, TailwindCSS
 
 % Experience
 \section{Experience}
 
-\jobheader{Nexon Dev Vina -- Nexon Web Builder}{February 2026 -- Present}{Backend -- Junior}
+\jobheader{Nexon Dev Vina -- Nexon Web Builder}{February 2026 -- Present}{Backend Developer}
 \techstack{NestJS, TypeScript, AWS Lambda, S3, SQS, CloudFront, MySQL, DDD, Hexagonal Architecture}
 \begin{itemize}
   \item Designed and developed core APIs for the Admin CMS and end-user site builder powering official websites for Nexon game titles; shipped V1 to production serving 10 million end users.
-  \item Redesigned the static-site build pipeline into parallelized, queue-based processing (Lambda + SQS + S3), cutting build time by 80\%; refactored legacy modules with DDD/Hexagonal Architecture.
+  \item Cut static-site build time by 80\% by redesigning the build pipeline into parallelized, queue-based processing on AWS Lambda, SQS, and S3.
+  \item Refactored legacy modules to DDD and Hexagonal Architecture, isolating business logic from infrastructure.
 \end{itemize}
 
-\jobheader{DXDLabs -- Digital Signature}{August 2025 -- February 2026}{Backend -- Fresher}
+\jobheader{DXDLabs -- Digital Signature}{August 2025 -- February 2026}{Backend Developer}
 \techstack{Express.js, TypeScript, Redis, PostgreSQL, Alibaba KMS, PayPal, BullMQ, Docker Compose, MinIO}
 \begin{itemize}
-  \item Built mission-critical payment (PayPal) and digital-signing (Alibaba KMS) engines; optimized high-concurrency signing workflows with Redis caching and BullMQ background jobs.
+  \item Built mission-critical payment (PayPal) and digital-signing (Alibaba KMS) engines for the company's e-signature platform.
+  \item Optimized high-concurrency signing workflows with Redis caching and BullMQ background jobs.
   \item Established CI/CD pipelines with Docker Compose and built the unit-testing suite from scratch, achieving 90\% code coverage.
 \end{itemize}
 
 % Projects
 \section{Projects}
 
-\jobheader{UniVentures 2025 -- Stockie: Trading Simulator}{October 2025 -- January 2026}{Tech Leader}
+\jobheader{UniVentures 2025 -- Stockie: Trading Simulator}{October 2025 -- January 2026}{Tech Lead \textnormal{--} \href{https://univen-2025.trancondev.site}{univen-2025.trancondev.site}}
 \techstack{Express.js, Python, Redis, VNStock, Docker Compose, PM2, AWS EC2, LLM, MCP}
 \begin{itemize}
-  \item Built a stock-trading simulator: Express.js/Redis backend, Python service syncing live Vietnam stock-market data (VNStock), trading mechanics, and RBAC authorization.
-  \item Led technical delivery for a cross-university team (RMIT, UIT) -- task delegation, API documentation, code review -- with CI/CD via GitHub Actions to AWS EC2. Demo: \href{https://univen-2025.trancondev.site}{univen-2025.trancondev.site}
+  \item Built a stock-trading simulator: Express.js/Redis backend, a Python service syncing live Vietnam stock-market data (VNStock), trading mechanics, and RBAC authorization.
+  \item Led technical delivery for a cross-university team (RMIT, UIT) -- task delegation, API documentation, code review -- shipping via GitHub Actions CI/CD to AWS EC2.
 \end{itemize}
 
 \jobheader{Smart Garage -- AIoT Vehicle Positioning System (Graduation Thesis)}{2025 -- 2026}{Solo Developer}
 \techstack{NestJS, MQTT, Redis, PostgreSQL (pgvector), SSE, Drizzle ORM, Docker, ESP32/UWB firmware}
 \begin{itemize}
-  \item Built a real-time indoor positioning backend: MQTT ingestion from UWB sensors, trilateration with One-Euro filtering, and Redis-backed SSE streaming to mobile and web clients.
+  \item Built a real-time indoor positioning backend: MQTT ingestion from ESP32/UWB sensors, trilateration with One-Euro filtering, and Redis-backed SSE streaming to mobile and web clients.
   \item Developed an AI assistant with hybrid RAG (BM25 + pgvector) and LLM tool-calling (MCP), reaching 100\% accuracy on a 101-question benchmark.
 \end{itemize}
 
