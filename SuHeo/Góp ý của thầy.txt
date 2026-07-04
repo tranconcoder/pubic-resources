@@ -1,0 +1,18 @@
+﻿. Tổng quan về công ty 
+- giới thiệu sản phẩm
+- phân khúc thị trường
+- Doanh số 
+- Mức độ công ty nhỏ hay lớn
+- Khách hàng chính
+2. Nguyên vật liệu 
+- Tỷ lệ từng nguyên liệu thế nào 
+- nói sâu hơn về sơn tàu biển
+- Sơn tàu biển có mấy lớp, cấu trúc,...
+3. Quy trình công nghệ và thiết bị 
+- Quy trình cái nào cho vào trước, cái nào đưa vào sau, có thể bỏ qua bước nào không, vì sao?
+- Thời gian mỗi giai đoạn là bao lâu
+- Thiết bị (Cấu tạo, nguyên lý, cách thao tác)
+4. Kiểm soát chất lượng 
+- có thể nói sâu hơn về tàu biển
+5. Những sự cố thường gặp
+6. An toàn lao động và vấn đề môi trường
